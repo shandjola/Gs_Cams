@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar et Bannière</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+        body{
+            background-color: rgb(95, 95, 95);
+        }
+
+        /* Navbar Styling */
+        .navbar-custom {
+            background-color: transparent;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .navbar-fixed {
+            background-color: rgb(14, 13, 13) !important;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-custom a {
+            color: rgb(250, 248, 246);
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .navbar-fixed a {
+            color: #e8f1e9 !important;
+        }
+        .navbar-custom .btn-register {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            margin-left: 20px;
+        }
+
+        /* Banner Styling */
+        .carousel-inner img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+        .carousel-caption {
+            left: 10%;
+            right: auto;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: left;
+        }
+        .carousel-caption h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .carousel-caption h3 {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        h2,h3,p {
+           color: #e8f1e9;
+        }
+        .carousel-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+          }
+          .carousel-text {
+            width: 30%;
+            padding: 10px;
+          }
+          .carousel-image {
+            width: 60%; 
+
+         }
+         .carousel-item img {
+            height: 500px; /* Ajustez la hauteur selon vos besoins */
+            object-fit: cover; /* Optionnel : pour ajuster le contenu de l'image */
+          }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <!-- <img src="https://via.placeholder.com/50" alt="Logo" class="d-inline-block align-text-top"> -->
+                MonLogo
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#acceuil">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#about">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#historique">Activité</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#evenement">Contact</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#activite">Activité</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="btn btn-register nav-link" href="#enregistrer">S'enregistrer</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" id="acceuil">
+            <div class="carousel-item active">
+                <img src="aa1.jpg" class="d-block w-100" alt="Image 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Bienvenue sur notre site</h1>
+                    <h3>Profitez des meilleures activités et événements.</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="aa2.jpeg" class="d-block w-100" alt="Image 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Découvrez nos événements</h1>
+                    <h3>Participez à des moments inoubliables.</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="aa3.jpg" class="d-block w-100" alt="Image 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Rejoignez nos activités</h1>
+                    <h3>Des activités enrichissantes pour tous.</h3>
+                </div>
+            </div>
+        </div>
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev"> -->
+            <span class="carousel-control-prev-icon" aria-hidden="true" id="about"></span>
+            <span class="visually-hidden"></span>
+    </div>
+    <section>
+        <div class="container-fluid mt-5">
+            <div class="row text-center mt-5">
+                <h2>
+                    Nous Concertant
+                </h2>
+                <h3>Juste du texte descriptive </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eaque quod animi error laudantium quasi nesciunt, maxime excepturi impedit deleniti obcaecati at. Accusantium aliquam quo voluptatibus laudantium quae, nihil saepe.</p>
+            </div>
+            <div class="row bg-light align-items-center mb-5">
+                <div class="col">
+                    <h2>Msr jean soki pe nani </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aliquid debitis exercitationem, repellendus harum amet dignissimos consectetur at expedita, nobis suscipit hic nesciunt repudiandae optio! Consequatur suscipit quos numquam fuga?</p>
+                </div>
+                <div class="col">
+                    <img src="aa3.jpg" alt="image du promoteur" class="img-fluid">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="row  text-center ">
+                    <h3>filier educatif</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos illum iusto maxime suscipit mollitia! Accusamus quam rerum ut officia sunt, illum omnis quod in harum tenetur, iure sint excepturi consequuntur.</p>
+                </div>
+                <!--    DEBUT SECTION POUR PRESENTATION FILIER EDUCATIV -->
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <img src="aa1.jpg" alt="filier1">
+                        </div>
+                        <div class="row">
+                            <h3>Ecole prmiare</h3>
+                            <p>une ecole avec plein succes</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <img src="aa1.jpg" alt="filier1">
+                        </div>
+                        <div class="row">
+                            <h3>Ecole prmiare</h3>
+                            <p>une ecole avec plein succes</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <img src="aa1.jpg" alt="filier1">
+                        </div>
+                        <div class="row">
+                            <h3>Ecole prmiare</h3>
+                            <p>une ecole avec plein succes</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <img src="aa1.jpg" alt="filier1">
+                        </div>
+                        <div class="row">
+                            <h3>Ecole prmiare</h3>
+                            <p>une ecole avec plein succes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- DEPBUT PRESENTATION CORPS EDUCATIF -->
+            <div class="row">
+               <div class="col">
+                <div class="row">
+                    <h3>Descruption de materiel important pour l'education</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ipsa in similique, dolore fuga veritatis inventore repellendus. Tempore voluptas ea similique quisquam aperiam, possimus voluptatum sunt, saepe explicabo eum dolore?</p>
+                </div>
+                <div class="row">
+                    <!-- carousel avec du texte en droite pour detaille de materiel pedagofique -->
+                     
+                </div>
+               </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mt-5">
+            <div class="carousel-container">
+              <!-- Carousel Images -->
+              <div id="imageCarousel" class="carousel slide carousel-image" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://via.placeholder.com/600x400?text=Image+1" class="d-block w-100 rounded" alt="Image 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://via.placeholder.com/600x400?text=Image+2" class="d-block w-100 rounded" alt="Image 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://via.placeholder.com/600x400?text=Image+3" class="d-block w-100 rounded" alt="Image 3">
+                  </div>
+                </div>
+                <!-- Flèches de direction -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Précédent</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Suivant</span>
+                </button>
+              </div>
+        
+              <!-- Texte qui change -->
+              <div class="carousel-text">
+                <div id="carouselText">
+                  <h3 id="textTitle">Titre de l'image 1</h3>
+                  <p id="textDescription">Description associée à l'image 1.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- Content -->
+   
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        const navbar = document.querySelector('.navbar-custom');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-fixed');
+            } else {
+                navbar.classList.remove('navbar-fixed');
+            }
+        });
+
+        const slides = document.querySelectorAll('.carousel-item');
+        let currentIndex = 0;
+
+        function changeSlide() {
+        slides[currentIndex].classList.remove('active'); // Cache le slide actuel
+        currentIndex = (currentIndex + 1) % slides.length; // Passe au slide suivant
+        slides[currentIndex].classList.add('active'); // Affiche le nouveau slide
+            }
+
+// Appelle la fonction toutes les 5 secondes
+        setInterval(changeSlide, 5000);
+
+        const texts = [
+        { title: "Titre de l'image 1", description: "Description associée à l'image 1." },
+        { title: "Titre de l'image 2", description: "Description associée à l'image 2." },
+        { title: "Titre de l'image 3", description: "Description associée à l'image 3." },
+      ];
+  
+      const carouselElement = document.querySelector('#imageCarousel');
+      const textTitle = document.querySelector('#textTitle');
+      const textDescription = document.querySelector('#textDescription');
+  
+      carouselElement.addEventListener('slide.bs.carousel', (event) => {
+        const index = event.to; // Index de l'image active
+        textTitle.textContent = texts[index].title;
+        textDescription.textContent = texts[index].description;
+      });
+
+    </script>
+</body>
+</html>
